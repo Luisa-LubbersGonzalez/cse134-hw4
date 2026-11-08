@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>My Technical Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Luisa Lubbers Gonzalez</a></p>
+        <nav aria-label="Main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="my-skills.html">Skills</a></li>
+            <li><a href="my-travels.html">Travels</a></li>
+            <li><a href="now.html">Now</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-me.html">Contact Info</a></li>
+            <li><a href="form-no-js.html" aria-current="page">Contact Form</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Form</h1>
+        <p>All fields marked <strong>(required)</strong> must be filled in before the form can be sent.</p>
+    
+        <form action="https://httpbin.org/post/" method="POST">
+            <div class="field">
+                <label for="name">Name (required)</label>
+                <p id="name-hint" class="hint">1 to 100 characters. Any letters, spaces, apostrophes, or hyphens are allowed.</p>
+                <input type="text" id="name" name="name" autocomplete="name" required minlength="1" maxlength="100" aria-describedby="name-hint">
+            </div>
+
+            <div class="field">
+                <label for="email">Email (required)</label>
+                <p id="email-hint" class="hint">Must be a valid email address, like name@example.com</p>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint">
+            </div>
+
+            <div class="field">
+                <label for="comments">Comments (required)</label>
+                <p id="comments-hint" class="hint">10 to 1000 characters.</p>
+                <textarea id="comments" name="comments" rows="6" required minlength="10" maxlength="1000" aria-describedby="comments-hint"></textarea>
+            </div>
+
+            <input type="hidden" name="possible_bot" value="true">
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Luisa Lubbers Gonzalez</p>
+        <p><a href="contact-me.html">Feel free to contact me :)</a></p>
+        <p><a href="experiments.html">Experiments page for CSE 134B HW2</a></p>
+    </footer>
+</body>
+</html>

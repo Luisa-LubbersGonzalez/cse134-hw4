@@ -201,3 +201,29 @@ a:focus, input:focus, textarea:focus, button:focus {
         padding: 1rem;
     }
 }
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: var(--spacing);
+}
+
+.hint {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+input:required, textarea:required {
+    border-color: var(--accent);
+}
+
+input:user-invalid, textarea:user-invalid {
+    border-color: #B3261E;
+    border-style: dashed;
+    background-color: #FFF0F3;
+}
+
+input:user-valid, textarea:user-valid {
+    border-color: #2E7D32;
+}
