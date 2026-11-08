@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>My Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://www.google.com">
+</head>
+
+<body>
+    <header>
+        <p><a href="index.html">Luisa Lubbers Gonzalez</a></p>
+        <nav aria-label="Main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="my-skills.html">Skills</a></li>
+            <li><a href="my-travels.html" aria-current="page">Travels</a></li>
+            <li><a href="now.html">Now</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Travels</h1>
+        <p>So far, I've been to a total of 10 countries on 3 continents. And this list is growing! I am hopeful that <em>as a graduation gift,</em> my family and I can travel to Spain, Portugal, and Morocco to add 3 countries and one continent to my list.</p>
+
+        <section>
+            <h2>
+                <!-- Used Claude to help me with coordinates and understanding of the svg tag to make this little pin icon for the page-->
+                <svg width="24" height="32" viewBox="0 0 24 32" role="img" aria-label="Map pin">
+                <path d="M12 1 C 5 1, 1 6, 1 12 C 1 20, 12 31, 12 31 C 12 31, 23 20, 23 12 C 23 6, 19 1, 12 1 Z" fill="white" stroke="black" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" fill="black"/>
+                </svg>
+                Where I've Been
+            </h2>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eIwRqBcUOjrpXxp7fjvDkq2AgZER1u4&amp;ehbc=2E312F" title="Map with a pin in each of the countries I have visited" width="640" height="480" loading="lazy"></iframe>
+            <h3>North America</h3>
+            <ul>
+                <li>United States</li>
+                <li>Canada</li>
+                <li>Mexico (<span lang="es">México</span>)</li>
+            </ul>
+            <h3>Asia</h3>
+            <ul>
+                <li>Japan (<span lang="ja">日本</span>)</li>
+                <li>South Korea (<span lang="ko">대한민국</span>)</li>
+            </ul>
+            <h3>Europe</h3>
+            <ul>
+                <li>The Netherlands (<span lang="nl">Nederland</span>)</li>
+                <li>Germany (<span lang="de">Deutschland</span>)</li>
+                <li>Luxembourg (<span lang="lb">Lëtzebuerg</span>)</li>
+                <li>France (<span lang="fr">France</span>)</li>
+                <li>Belgium (<span lang="nl">België</span> / <span lang="fr">Belgique</span>)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Favorite Trips</h2>
+            <article>
+                 <h3>Japan</h3>
+                <picture>
+                    <img src="pictures/tokyo.jpg" alt="A picture of a small building just outside the Imperial Palace in Tokyo" width="400" height="475">
+                </picture>
+                <p>I visited Tokyo, Kyoto, and Osaka in Japan for a week and a half with my Sister, Mom, and Dad last summer. We were in Japan from July 3-13, 2025. While the weather wasn't ideal, it was truly a once-in-a-lifetime trip with my entire family.</p>
+                <p>I was also fortunate enough to visit <i>again</i> later that year with my Mom, for her birthday. She and I visited Tokyo again from December 13-21, 2025. The weather was definitely much cooler than the previous trip. They were both very notable trips, and have certainly changed my life for the better.</p>
+                <trip-highlight>
+                    <p>If I had to pick the two most memorable moments or places, one from each trip, I think I would say visiting <b>Tokyo Skytree</b> and seeing Mount Fuji during the sunset in December was really special, as was hiking to the top of <b>Fushimi Inari</b> in Kyoto with my Dad and Sister sweating our butts off, that was also really memorable <i>(Don't know if I'll be doing that again)</i>.</p>
+                </trip-highlight>
+            </article>
+            <article>
+                <h3>The Netherlands</h3>
+                <picture>
+                    <img src="pictures/amsterdam.jpg" alt="A photo of one of the many canals throughout Amsterdam" width="500" height="500">
+                </picture>
+                <p>For context, my Dad's family is Dutch and German. I took a 23&amp;Me test, and turns out I am 45% Germanic European from his side. So this summer, my Dad and I took a trip to visit where our ancestors are from. We landed in Amsterdam, and took a mini roadtrip throughout several European countries. We spent the first and last 2 days of our 10 day trip in cities throughout The Netherlands.</p>
+                <trip-higlight>
+                    <p>Amsterdam was full of people, with lots of variability in culture and experiences. We also visited towns like Groningen, which is a Dutch College town, so it was nice to see how international students live their daily lives.</p>
+                </trip-higlight>
+                <p>I must note though, that the scariest part of the trip was most certainly the amount of bikes throughout the country. You had to keep your head on a swivel to make sure you weren't run over by the various people biking throughout the country.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Luisa Lubbers Gonzalez</p>
+        <p><a href="contact-me.html">Feel free to contact me :)</a></p>
+        <p><a href="experiments.html">Experiments page for CSE 134B HW2</a></p>
+    </footer>
+</body>
+</html>

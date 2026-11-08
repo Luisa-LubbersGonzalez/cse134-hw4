@@ -1,0 +1,203 @@
+/* Setting up the variables */
+:root {
+    --pink: #F7C6DC;
+    --purple: #D9C8F5;
+    --blue: #C3E2F7;
+    --accent: #7A4FB5;
+    --text: #3B2A4D;
+    --background: #FFF7FB;
+    --main-font: "Lora", Georgia,  serif;
+    --page-width: 900px;
+    --radius: 12px;
+    --spacing: 1.5rem;
+}
+
+/* Body tag throughout all the pages */
+body{
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--text);
+    background-color: var(--background);
+    line-height: 1.5;
+}
+
+/* Header tags */
+header {
+    background: linear-gradient(to right, var(--pink), var(--purple), var(--blue));
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Child and descendant combinators to make the link in my header look more like a title, which is inside of the paragraph */
+header > p a {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* Descendant combinator for the ul tags inside the navigator tags to seperate and center the different navigation options */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+ 
+/* Descendant combinator for the a tags inside the navigator tags, give round look to navigation */
+nav a {
+    display: block;
+    padding: 0.4em;
+    background-color: white;
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* Attribte selector to highlight the navigation link for the page that I am currently on */
+a[aria-current="page"] {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* For the content in the main tags */
+main {
+    max-width: var(--page-width);
+    margin: auto;
+    padding: var(--spacing);
+}
+
+/* h1 tags */
+h1 {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+/* h2 tags */
+h2 {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+/* Adjacent siblings combinator so that the first paragraph after a second header is a little bigger */
+h2 + p {
+    font-size: 1.2rem;
+}
+
+/* h3 tags */
+h3 {
+    font-size: 1.3rem;
+}
+
+/* section and article tags */
+section, article {
+    background-color: white;
+    border: 2px solid var(--purple);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: var(--spacing);
+}
+
+/* To make my images look a little rounder a photocard effect */
+img {
+    max-width: 100%;
+    width: 315px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    height: auto;
+    border: 5px solid white;
+    border-radius: var(--radius);
+}
+
+/* Child combinator to center my images relative to the home page */
+main > picture img, main > img, main > section article picture img  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* iframe tags */
+iframe {
+    max-width: 100%;
+    border: 3px solid var(--blue);
+}
+
+/* Custom elements from HW2 moved to CSS file */
+trip-highlight {
+    display: block;
+    border: 2px dashed var(--accent);
+    border-radius: var(--radius);
+    background-color: var(--blue);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* fieldset tag in contact form */
+fieldset {
+    border: 2px solid var(--pink);
+    border-radius: var(--radius);
+    margin-bottom: var(--spacing);
+}
+
+/* textarea tags and text/email input type look */
+input[type="text"], input[type="email"], textarea {
+    width: 350px;
+    max-width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--purple);
+    font-family: var(--main-font);
+}
+
+/* button tag */
+button{ 
+    padding: 0.4rem;
+    background-color: var(--pink);
+    border: 1.6px solid var(--accent);
+    color: var(--text);
+    font-size: 1rem;
+}
+
+/* To create a footer look */
+footer{ 
+    background-color: var(--purple);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Look for hovering over links */
+a:hover { 
+    color: var(--text);
+    background-color: var(--blue);
+}
+
+/* Look for hovering over buttons */
+button:hover {
+    background-color: var(--blue);
+}
+
+/* Focusing on interactive elements */
+a:focus, input:focus, textarea:focus, button:focus { 
+    outline: 2px solid var(--accent);
+    outline-offset: 1.5px;
+}
+
+/* Media query that changes the layout for a narrow screen */
+@media (max-width: 500px) {
+    nav ul { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}

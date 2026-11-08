@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p><a href="index.html">Luisa Lubbers Gonzalez</a></p>
+        <nav aria-label="Main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="my-skills.html">Skills</a></li>
+            <li><a href="my-travels.html">Travels</a></li>
+            <li><a href="now.html">Now</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-me.html" aria-current="page">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>How To Contact Me</h1>
+        <section>
+            <h2>Email &amp; Links</h2>
+            <address>
+                Personal Email: <a href="mailto:luisa.lubbers@gmail.com">luisa.lubbers@gmail.com</a><br>
+                School Email: <a href="mailto:llubbersgonzalez@ucsd.edu">llubbersgonzalez@ucsd.edu</a><br>
+                Coaching Email: <a href="mailto:coachluisa@exodusvolleyball.org">coachluisa@exodusvolleyball.org</a><br>
+                GitHub: <a href="https://github.com/Luisa-LubbersGonzalez">Luisa-LubbersGonzalez</a>
+            </address>
+        </section>
+        <section>
+            <h2>Best Time to Reach Me</h2>
+            <p>Given my schedule with school and work, the best times to contact me are: Tuesdays and Thursdays after 3:30PM and Wednesdays from 1:00-4:00PM.</p>
+            <p><strong>As shown, the best way to contact me is via email. If you would prefer an alternative method, please let me know of your preference.</strong></p>
+        </section>
+        <section>
+            <h2>Send a message from this site</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>About You</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Why are you getting in contact with me?</legend>
+                    <div>
+                        <input type="radio" id="reason-job" name="reason-job">
+                        <label for="reason-job">Job Opportunity</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reason-volleyball" name="reason-volleyball">
+                        <label for="reason-volleyball">Volleyball or coaching question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reason-other" name="reason-other">
+                        <label for="reason-other">Other reason</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Going to add some JavaScript later in the project for this message, if able to-->
+        <dialog id="confirmation-dialog" aria-labelledby="confirmation-dialog-title" aria-describedby="confirmation-dialog-description">
+            <h2 id="confirmation-dialog-title">Message Sent</h2>
+            <p id="confirmation-dialog-description">Thank you for reaching out! Your message has been sent successfully. I will get back to you as soon as possible.</p>
+            <form method="dialog">
+                <button type="submit">Close</button>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Luisa Lubbers Gonzalez</p>
+        <p><a href="contact-me.html">Feel free to contact me :)</a></p>
+        <p><a href="experiments.html">Experiments page for CSE 134B HW2</a></p>
+    </footer>
+</body>
+</html>

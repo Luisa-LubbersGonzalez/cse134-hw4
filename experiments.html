@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>Experiment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <p><a href="index.html">Luisa Lubbers Gonzalez</a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>HTML Experiments</h1>
+    <section>
+        <h2>Template</h2>
+        <p>This won't be displayed on the browser, as it is a template. I can use it later, with the help of Java Script.</p>
+        <template id="blog-card-template">
+            <article>
+                <h3>Post title</h3>
+                <p>Posted on [Date]</p>
+                <p>Will add a quick description of the post.</p>
+                <a href="blog.html">Read more from the blog</a>
+            </article>
+        </template>
+    </section>
+    <section>
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="media/sample-15s.mp3" type="audio/mpeg">
+            <!-- Got sample from https://samplelib.com/sample-mp3.html-->
+        </audio>
+    </section>
+    <section>
+        <h2>Video</h2>
+        <video controls width="545" height="360">
+            <source src="media/sample-10s-720p.mp4" type="video/mp4">
+            <!-- Got sample from https://samplelib.com/sample-mp4.html-->
+        </video>
+    </section>
+    <section>
+        <h2>Canvas</h2>
+        <!--Used Claude to get a better understanding of the canvas tag and think of the most basic idea that I could use to display an experimentation with the tag-->
+        <canvas id="demo-canvas" width="320" height="150">A circle with the words "Hello, canvas!" next to it.</canvas>
+        <script>
+            const canvas = document.getElementById('demo-canvas');
+            const ctx = canvas.getContext('2d');
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(75, 75, 50, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.font = '20px sans-serif';
+            ctx.fillText('Hello, canvas!', 140, 82);
+        </script>
+    </section>
+  </main>
+</body>
+</html>

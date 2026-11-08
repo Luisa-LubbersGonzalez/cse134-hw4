@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        /* Eventual analytics script to be here */
+
+        customElements.define('hello-world', class extends HTMLElement {
+            connectedCallback() {
+                console.log('Hello World!');
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Luisa Lubbers Gonzalez</a></p>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="my-skills.html">Skills</a></li>
+                <li><a href="my-travels.html">Travels</a></li>
+                <li><a href="now.html">Now</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <noscript>
+        <p>JavaScript is disabled in your browser. Some features of this site may not work as intended, but most should.</p>
+    </noscript>
+
+    <main>
+        <picture>
+            <!-- Used Claude as a confirmation that the picture tag needs a source tag with webp as a potential image type to display to truly be of purpose-->
+            <source srcset="pictures/me.webp" type="image/webp">
+            <img src="pictures/me.jpg" alt="A photo of myself (Luisa) on my recent trip to Luxembourg" width="385" height="500">
+        </picture>
+        <article>
+            <h1>Welcome to My Site!</h1>
+            <p>This is a personal website I am building to showcase my skills, experience, and personality.</p>
+            <span></span>
+            <p>I'm Luisa Lubbers Gonzalez, a 4th year at <strong>UC San Diego</strong> studying Computer Science.
+            This site is a work in progress, but it is meant to be a display of my skills, experiences, and everyday life.</p>
+        </article>
+        <section>
+            <h2>Where You Can Start</h2>
+            <p>Please use one of the following links to continue learning more from the site:</p>
+            <ul>
+                <li><a href="about-me.html">About Me</a>: Learn more about me and my background.</li>
+                <li><a href="resume.html">My Resume</a>: View my professional experience, education, and projects.</li>
+                <li><a href="my-skills.html">My Skills</a>: Explore the skills I have developed through life, school, work, and volleyball.</li>
+                <li><a href="contact-me.html">Contact Me</a>: Get in touch with me with any questions or just to say hello!</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Latest Updates</h2>
+            <article>
+                <h3>Mid October Slump</h3>
+                <p>Posted on October 15, 2026</p>
+                <p>The quarter is about 3 weeks in, work continues, and volleyball season is approaching. With 24 hours in a day, let's find out how much I can get done.</p>
+                <h3>October Flying By</h3>
+                <p>Posted on October 25, 2026</p>
+                <p>Sunday before week 5, projects are picking up, Midterms are starting, and Halloween is right around the corner.</p>
+                <p><a href="blog.html">Read more posts from my blog</a></p>
+            </article>
+        </section>
+        <hello-world></hello-world>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Luisa Lubbers Gonzalez</p>
+        <p><a href="contact-me.html">Feel free to contact me :)</a></p>
+        <p><a href="experiments.html">Experiments page for CSE 134B HW2</a></p>
+    </footer>
+</body>
+</html>

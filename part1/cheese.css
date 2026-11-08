@@ -1,0 +1,60 @@
+/* Luisa Lubbers Gonzalez https://github.com/Luisa-LubbersGonzalez/cse134b-hw3 */
+
+body {
+    font-family: monospace;
+    color: #FBC02D;
+    line-height: 1.4;
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    font-style: italic;
+    font-weight: bold;
+    color: #fab506;
+    background-color: #fffacf;
+}
+
+blockquote {
+    border: 2px solid #8ddafd;
+    margin: 1.4em;
+    padding: 8px 16px;
+}
+
+a:hover {
+    color: #C76E00;
+}
+
+a:focus, input:focus, button:focus {
+    outline: 2px solid;
+    color: #993300;
+}
+
+footer {
+    color:#d89442;
+    font-weight: bold;
+}
+
+footer {
+    color: #6194db;
+    font-style: italic;
+}
+
+/* Based on my testing with the footer, it looks like the most recently set CSS rule is prioritized. The later value wins because the CSS file is being read from top to bottom, 
+so the rules will go 'cascading' down, as the instructions for this section show. Since neither rule is prioritized with !important, the CSS file will just pick from its most 
+recent read, the later rule. */
