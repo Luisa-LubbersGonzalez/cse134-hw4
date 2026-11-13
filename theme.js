@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     updateButtonText();
-    themeButton.hidden = false;
+    themeToggleButton.hidden = false;
 
     // add event listener to toggle the theme switch functionality
     themeToggleButton.addEventListener("click", function () {
