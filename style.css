@@ -20,6 +20,24 @@
     color-scheme: light;
 }
 
+/* Setting up variables, but for the dark theme */
+:root[data-theme="dark"] {
+    --pink: #5A3550;
+    --purple: #4A3A66;
+    --blue: #2F4A63;
+    --accent: #C9A7F5;
+    --text: #F3E8F7;
+    --background: #1E1726;
+    --surface: #2A2035;
+    --error: #FF9AA2;
+    --error-background: #3A1E28;
+    --success: #7BD88F;
+    --warning: #FFC27A;
+    --on-accent: #1E1726;
+    --field-background: #1E1726;
+    color-scheme: dark;
+}
+
 /* Body tag throughout all the pages */
 body{
     margin: 0;
