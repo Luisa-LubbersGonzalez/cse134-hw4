@@ -56,8 +56,17 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             currentTheme = "dark";
         }
-        applyTheme(currentTheme);
+
+        //View Transition API
+        if (document.startViewTransition) {
+            document.startViewTransition(function () {
+                applyTheme(currentTheme);
+                updateButtonLabel();
+            });
+        } else {
+            applyTheme(currentTheme);
+            updateButtonLabel();
+        }
         saveTheme(currentTheme);
-        updateButtonText();
     });
-});
+})

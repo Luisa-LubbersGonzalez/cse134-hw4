@@ -265,3 +265,11 @@ input:user-valid, textarea:user-valid {
     font-weight: bold;
     color: var(--error);
 }
+
+@media (prefers-reduced-motion: reduce) {
+    ::view-trainsition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+        animation: none;
+    }
+}
