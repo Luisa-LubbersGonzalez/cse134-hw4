@@ -227,3 +227,13 @@ input:user-invalid, textarea:user-invalid {
 input:user-valid, textarea:user-valid {
     border-color: #2E7D32;
 }
+
+#char-warning.near-limit {
+    font-weight: bold;
+    color: #8A4B00;
+}
+
+#char-warning.at-limit, #error-area li {
+    font-weight: bold;
+    color: #B3261E;
+}
