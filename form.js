@@ -126,5 +126,5 @@ updateCharCount();
 
 //Serialize the array and place it in hidden field
 form.addEventListener("submit", function() {
-    formErrorsInputs.value = JSON.stringify(form_errors);
+    formErrorsInput.value = JSON.stringify(form_errors);
 });
