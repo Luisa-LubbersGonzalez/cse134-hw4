@@ -10,6 +10,14 @@
     --page-width: 900px;
     --radius: 12px;
     --spacing: 1.5rem;
+    --surface: white;
+    --error: #B3261E;
+    --error-background: #FFF0F3;
+    --success: #2E7D32;
+    --warning: #8A4B00;
+    --on-accent: white;
+    --field-background: white;
+    color-scheme: light;
 }
 
 /* Body tag throughout all the pages */
@@ -52,7 +60,7 @@ nav ul {
 nav a {
     display: block;
     padding: 0.4em;
-    background-color: white;
+    background-color: var(--surface);
     border: 2px solid var(--accent);
     border-radius: 20px;
     color: var(--accent);
@@ -62,7 +70,7 @@ nav a {
 /* Attribte selector to highlight the navigation link for the page that I am currently on */
 a[aria-current="page"] {
     background-color: var(--accent);
-    color: white;
+    color: var(--on-accent);
 }
 
 /* For the content in the main tags */
@@ -96,7 +104,7 @@ h3 {
 
 /* section and article tags */
 section, article {
-    background-color: white;
+    background-color: var(--surface);
     border: 2px solid var(--purple);
     border-radius: var(--radius);
     padding: 1rem;
@@ -110,7 +118,7 @@ img {
     aspect-ratio: 2/3;
     object-fit: cover;
     height: auto;
-    border: 5px solid white;
+    border: 5px solid var(--surface);
     border-radius: var(--radius);
 }
 
@@ -151,6 +159,8 @@ input[type="text"], input[type="email"], textarea {
     padding: 0.5rem;
     border: 2px solid var(--purple);
     font-family: var(--main-font);
+    background-color: var(--field-background);
+    color: var(--text);
 }
 
 /* button tag */
@@ -219,21 +229,21 @@ input:required, textarea:required {
 }
 
 input:user-invalid, textarea:user-invalid {
-    border-color: #B3261E;
+    border-color: var(--error);
     border-style: dashed;
-    background-color: #FFF0F3;
+    background-color: var(--error-background);
 }
 
 input:user-valid, textarea:user-valid {
-    border-color: #2E7D32;
+    border-color: var(--success);
 }
 
 #char-warning.warning {
     font-weight: bold;
-    color: #8A4B00;
+    color: var(--warning);
 }
 
 #char-warning.at-limit, #error-area li {
     font-weight: bold;
-    color: #B3261E;
+    color: var(--error);
 }
