@@ -228,7 +228,7 @@ input:user-valid, textarea:user-valid {
     border-color: #2E7D32;
 }
 
-#char-warning.near-limit {
+#char-warning.warning {
     font-weight: bold;
     color: #8A4B00;
 }

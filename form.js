@@ -89,7 +89,7 @@ fields.forEach(function (field) {
         const message = checkField(field, true);
         form_errors.push({
             field: field.id,
-            error: messsage,
+            error: message,
             time: new Date().toISOString()
         });
     });
@@ -103,12 +103,12 @@ const warningThreshold = 100;
 
 // Display the number of chars remaining in the comments field
 function updateCharCount() {
-    const limit = commentsField.maxLength;
-    const remaining = limit - commentsField.value.length;
+    const limit = commentsInput.maxLength;
+    const remaining = limit - commentsInput.value.length;
 
     charCount.textContent = remaining + " of " + limit + " characters remaining.";
 
-    if (remaining == 0) {
+    if (remaining === 0) {
         charWarning.textContent = "You have reached the maximum number of characters.";
         charWarning.className = "at-limit";
     } else if (remaining <= warningThreshold) {
@@ -121,10 +121,10 @@ function updateCharCount() {
 }
 
 // update on input change to the comments field and on page load
-commentsField.addEventListener("input", updateCharCount);
+commentsInput.addEventListener("input", updateCharCount);
 updateCharCount();
 
 //Serialize the array and place it in hidden field
 form.addEventListener("submit", function() {
-    formErrorInputs.value = JSON.stringify(form_errors);
+    formErrorsInputs.value = JSON.stringify(form_errors);
 });
