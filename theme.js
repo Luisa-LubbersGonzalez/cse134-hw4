@@ -34,7 +34,7 @@ applyTheme(currentTheme);
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggleButton = document.querySelector("#theme-toggle");
 
-    if (themeButton === null) {
+    if (themeToggleButton === null) {
         return;
     }
 
