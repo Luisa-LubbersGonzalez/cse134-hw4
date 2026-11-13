@@ -61,11 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (document.startViewTransition) {
             document.startViewTransition(function () {
                 applyTheme(currentTheme);
-                updateButtonLabel();
+                updateButtonText();
             });
         } else {
             applyTheme(currentTheme);
-            updateButtonLabel();
+            updateButtonText();
         }
         saveTheme(currentTheme);
     });
