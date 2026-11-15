@@ -267,7 +267,7 @@ input:user-valid, textarea:user-valid {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    ::view-trainsition-group(*),
+    ::view-transition-group(*),
     ::view-transition-old(*),
     ::view-transition-new(*) {
         animation: none;
